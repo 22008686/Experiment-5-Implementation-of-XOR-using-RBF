@@ -33,33 +33,24 @@ The RBF of hidden neuron as gaussian function
 
 ## ALGORIHM:
 
-STEP 1:
-Import the necessary libraries of python.
+STEP 1:Import the necessary libraries of python.
 
-STEP 2:
-In the function of end_to_end, calculate the similarity between the inputs and the peaks. Then, using the equation Aw = Y in matrix form. Each row of A consists of (shape: (4, 2)).
+STEP 2:In the function of end_to_end, calculate the similarity between the inputs and the peaks. Then, using the equation Aw = Y in matrix form. Each row of A consists of (shape: (4, 2)).
 
-STEP 3:
-In index[0] of the matrix there is a similarity of a point with peak1. In index[1] of the matrix there is a similarity of another point with peak2. In index[2] of the matrix the Bias input is given (1).
+STEP 3:In index[0] of the matrix there is a similarity of a point with peak1. In index[1] of the matrix there is a similarity of another point with peak2. In index[2] of the matrix the Bias input is given (1).
 
-STEP 4:
-Y is the output associated with the input of (shape: (4, )). W is calculated using the same equation we use to solve the linear regression using a closed solution ((i.e) normal equation).
+STEP 4:Y is the output associated with the input of (shape: (4, )). W is calculated using the same equation we use to solve the linear regression using a closed solution ((i.e) normal equation).
 
-STEP 5:
-This neural network is constructed using the architecture of 2-2-1;
-
+STEP 5:This neural network is constructed using the architecture of 2-2-1;
 where;
-
 2 nodes of input neurons (x1, x2) used in input layer, 2 node of neurons (each for one peak) used in hidden layer, and 1 neuron used in output layer.
 
-STEP 6:
-The last step is to find the weights for the edges to the 1-output unit. Weights associated would be:
-
+STEP 6:The last step is to find the weights for the edges to the 1-output unit. Weights associated would be:
 edge joining 1st node (peak1-output) to the output node,
 edge joining 2nd node (peak2-output) to the output node and
 the bias edge.
-STEP 7:
-End the program.
+
+STEP 7:End the program.
 
 ## PROGRAM:
 ```
